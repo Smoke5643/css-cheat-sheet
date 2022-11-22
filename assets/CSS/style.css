@@ -20,14 +20,6 @@ section p {
     text-align: center;
 }
 
-.card h2 {
-    display: flex;
-    flex: flex-start;
-    border: solid;
-    color: var(--dark)
-    border-radius: 5px;
-}
-
 article p {
     padding: 10px;
     color: var(--dark)
@@ -36,7 +28,10 @@ article p {
 
 article code,
 article pre {
-    background-color: var(--dark);
+    background-image: linear-gradient(
+    rgb(33, 96, 95) 0%,
+    var(--dark) 100%
+  );
 }
 
 article pre{
@@ -48,26 +43,34 @@ article pre{
     display: flex; 
     flex-direction: row;
     flex-wrap: wrap;
-    
-}
+    }
 
 article {
     padding: 8px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
     border-style: dotted;
-    margin-top: 36px;
+    margin: 0 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
     border-color: var(--light);
-    width: 33.33%
+    width: calc(33.33% - 32px);
 }
 
 article h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid whitesmoke 2px;
     border-radius: 5px;
     padding: 4px;
     color: var(--dark);
+}
+
+article:hover,
+article:hover h2{
+    box-shadow: 0 0 16px lightblue;
 }
 
 footer {
@@ -83,13 +86,13 @@ footer h2{
 
 @media screen and (max-width: 1160px) { 
    article {
-    width: calc(50% - 
+    width: calc(50% - 32px)
     }
   }*/
 
   @media screen and (max-width: 768px) { 
     article {
-        width: calc(100% - 
+        width: calc(100% - 32px)
     }
   }
   
