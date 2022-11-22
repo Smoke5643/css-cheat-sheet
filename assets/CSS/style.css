@@ -88,11 +88,11 @@ footer h2{
    article {
     width: calc(50% - 32px)
     }
-  }*/
+  }
 
-  @media screen and (max-width: 768px) { 
+@media screen and (max-width: 768px) { 
     article {
         width: calc(100% - 32px)
     }
-  }
+}
   
