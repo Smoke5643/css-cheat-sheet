@@ -9,37 +9,85 @@
     <link rel="stylesheet" href="./assets/css/style.css"/>
 </head>
 <body>
+    <div class= "container">
     <header>
-        <h1>CSS Snippet Cheatsheet Wireframe</h1>
+        <h1>CSS Snippet Cheatsheet</h1>
     </header>
 
     <section>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure in voluptas dolor velit aperiam similique impedit modi sed numquam atque nobis error delectus sequi, accusantium soluta quae minima, facere fugit.</p>
+        <p>Ever have trouble recalling the exact CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy.</p>
     </section>
-    <section>
-        <article>
-            <div>
-                <h2></h2>
-            </div>
+    <div class="boxes"> 
+        <article class="card">
+            <header>Flexbox Row</header>
+            <p>Use these three properties to creat a Flexbox row layout.</p>
+            <pre><code>
+                .row {
+                    disply: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            </code></pre>
         </article>
-        <article>
-
+        <article class="card">
+            <header>Flexbox Column</header>
+            <p>Use this to create a Flexbox column layout</p>
+            <pre><code>
+                .column {
+                    disply: flex;
+                    flex-direction: column;
+                }
+            </code></pre>
         </article>
-        <article>
-
+        <article class="card">
+            <header class=>CSS Grid Layout</header>
+            <p>Build a 12-column layout using CSS Grid.</p>
+            <pre><code>
+                .grid {
+                    disply: grid;
+                    width 100%;
+                    grid-template-columns:
+                repeat(12, 1fr);
+                }
+            </code></pre>
         </article>
-        <article>
-
+        <article class="card">
+            <header>Linear Gradients</header>
+            <p>This will create a background linear gradient from top to bottom</p>
+            <pre><code>
+                .row {
+                    disply: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            </code></pre>
         </article>
-        <article>
-
+        <article class="card">
+            <header>Box Transition Glow</header>
+            <p>Use transition and box shadows to glow on hover </p>
+            <pre><code>
+                .row {
+                    disply: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            </code></pre>
         </article>
-        <article>
-
+        <article class="card">
+            <header>Overlay Card with Title</header>
+            <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
+            <pre><code>
+                .row {
+                    disply: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+            </code></pre>
         </article>
-    </section>
+    </div>
     <footer>
         <p>Made with heart and CSS</p>
     </footer>
+</div> 
 </body>
 </html>
